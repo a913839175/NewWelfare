@@ -1,0 +1,113 @@
+.warpper{
+    height: 100%;
+}
+.regform {
+  margin: 0.4rem 0.48rem 0 0.48rem;
+}
+.form-group {
+  width: 100%;
+  height: 0.86rem;
+  border: 0.02rem solid #fecc0b;
+  margin-bottom: 0.36rem;
+  position: relative;
+}
+.form-group input {
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 0.3rem 0;
+  width: 5.7rem;
+  height: 0.26rem;
+  font-size: 0.28rem;
+  color: #4c4c4c;
+  margin-left: 0.8rem;
+}
+.form-group label.phone-label {
+  width: 0.25rem;
+  height: 0.41rem;
+  background: url(../images/phone.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.2rem;
+}
+.form-group label.code-label {
+  width: 0.31rem;
+  height: 0.41rem;
+  background: url(../images/code.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.2rem;
+}
+.form-group label.psw-label {
+  width: 0.31rem;
+  height: 0.38rem;
+  background: url(../images/psw.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.2rem;
+}
+.form-group .code-button {
+  width: 2.32rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background: #05cefd;
+  color: #fff;
+  font-size: 0.32rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: -0.02rem;
+  right: -0.02rem;
+}
+.form-check {
+  width: 100%;
+  text-align: center;
+  color: #4c4c4c;
+  font-size: 0.26rem;
+}
+.form-check .agree {
+  display: none;
+}
+.form-check em {
+  background: url(../images/argee.png);
+  background-size: 100%;
+  display: inline-block;
+  width: 0.28rem;
+  height: 0.27rem;
+  margin-right: 0.1rem;
+  vertical-align: middle;
+  position: relative;
+  top: -0.04rem;
+}
+.form-check a {
+  color: #04b4fd;
+}
+.form-button {
+  width: 100%;
+  text-align: center;
+  margin: 0.6rem 0;
+}
+.reg-button {
+  background: url(../images/reg_button.png) no-repeat center;
+  width: 6.54rem;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background-size: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  border: none;
+  font-size: 0.32rem;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.1rem;
+}
+.code-button.btn-disable,.reg-button.btn-disable {
+  background: #a1a1a1;
+}

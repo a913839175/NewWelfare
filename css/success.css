@@ -1,0 +1,46 @@
+html,
+.warpper {
+  background: #FFFFFF;
+  height: 100%;
+}
+.success01 {
+  color: #04b4fd;
+  font-size: 0.32rem;
+  text-align: center;
+  padding-top: 0.55rem;
+  font-weight: bold;
+}
+.erweima {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.4rem;
+}
+.success02 {
+  font-size: 0.22rem;
+  color: #b2b2b2;
+  text-align: center;
+  padding-top: 0.4rem;
+}
+.success03 {
+  font-size: 0.22rem;
+  color: #b2b2b2;
+  text-align: center;
+}
+.success03 span {
+  color: #04b4fd;
+}
+.success04 {
+  width: 6.52rem;
+  height: 0.88rem;
+  display: block;
+  margin: 0 auto;
+  background: #00d3fd;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  line-height: 0.88rem;
+  font-size: 0.32rem;
+  color: #fff;
+  margin-top: 1.2rem;
+}

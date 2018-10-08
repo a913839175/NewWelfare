@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/common/jquery.min.1.10.2.js"></script>
+</head>
+<body>
+<script>
+    var getUrlparam = function(name) {
+          var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+          var r = decodeURIComponent(window.location.search.substr(1)).match(reg);
+          if (r != null) {
+              return decodeURI(r[2]);
+          }
+          return null;
+    };
+    var setCookie = function(c_name,value,expiredays){
+          var exdate=new Date();
+          exdate.setDate(exdate.getDate()+expiredays);
+          document.cookie = c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString());
+    };  
+    var code = getUrlparam('code');
+    var state = getUrlparam('state');
+    var fromUrl = getUrlparam('fromUrl');
+    var linkUrl = fromUrl ? fromUrl :'index.html';
+    var WXURL = "https://www.weipaidai.com/api/jssdk";
+    $.ajax({
+        url:WXURL+'/oAuthServlet',
+        type: "get",
+        dataType: "json",
+        data:{
+            code:code,
+            state:state
+        },
+        success: function(data) {
+            // alert("----用户信息:"+JSON.stringify(data));
+            setCookie('userinfo',JSON.stringify(data),7);
+            // window.localStorage.setItem("userinfo",JSON.stringify(data));
+            location.href = linkUrl;
+        },
+        error:function(data){
+            App.toast("系统连接超时");
+        }
+    });
+</script>
+</body>
+</html>

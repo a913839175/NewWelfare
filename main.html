@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <title>邀请好友-新手福利</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <script src="js/common/jquery.min.1.10.2.js"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>  
+    <script src="js/common/rem.js"></script>
+    <script src="js/common/loading.js"></script> 
+    <script src="js/common/jquery.md5.js"></script>
+    <script src="js/common/JSEncrypt.js"></script>
+    <script src="js/main.js?v=201712191637"></script>
+    <!-- <script src="//g.alicdn.com/mtb/ctrl-mjlogger/1.0.7/mjlogger.js"></script> -->
+</head>
+<body>
+<div class="warpper">
+    <div class="banner">
+        <img src="images/success01.png">
+    </div>
+    <div class="container clearfix">
+        <div class="regform">
+            <div class="form-group">
+                <label class="phone-label"></label>
+                <input type="tel" name="rephone" class="reg-phone" placeholder="请输入手机号" maxlength="11">
+            </div>
+            <div class="form-group">
+                <label class="code-label"></label>
+                <input type="tel" name="phone" style="position: absolute;z-index: -1;display: none;" disabled autocomplete="off"/>
+                <input type="tel" name="phone" class="reg-code" placeholder="请输入手机验证码" maxlength="6" >
+                <button type="button" class="code-button">获取验证码</button>
+            </div>
+            <div class="form-group">
+                <label class="psw-label"></label>
+                <input type="password" name="psword" class="reg-psw" placeholder="请设置密码(6-20位大小写字母和数字组成)" maxlength="20">
+            </div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" name="agree" class="agree" checked="checked">
+            <label><em class="checkBtn"></em>我已阅读并同意<a href="https://www.weipaidai.com/news/detail/4" target="_blank">《微拍贷平台服务协议》</a></label>
+        </div>
+        <div class="form-button">
+            <button class="reg-button">注册并领取福利</button>
+        </div>     
+    </div>
+</div>
+</body>
+</html>
